@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Landing Page</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./output.css') }}">
+    <script src="https://kit.fontawesome.com/d9ec437633.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./output.css" type="text/css">
+</head>
+
+<body>
+    <!-- Navbar with brand name and Discord login button -->
+    <nav class="bg-gray-900 sticky top-0">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">AICord</h1>
+            <!--ul class="flex flex-row gap-2 justify-center items-center">
+                <li class="bg-gray-800 mx-2 p-3 rounded-xl"><a href="#"></a></li>
+                <li class="mx-2"><a href="#">Privacy policy</a></li>
+            </ul-->
+            <a href="#" class="bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"><i class="fa-brands fa-discord"></i> Log in</a>
+        </div>
+    </nav><!--bg-gray-800-->
+    <header class="grid grid-cols-1 sm:grid-cols-2 h-fit bg-gray-900 items-center p-10 gap-4 justify-center">
+        <div class="hero-text">
+            <h1 class="text-5xl font-extrabold mb-4 leading-normal">Bring AI features to your Discord server</h1>
+            <p class="text-2xl text-gray-400 mb-5">Bring AI features to your Discord server effortlessly, such as AI characters, image generation, AI moderation and much more</p>
+            <div class="grid grid-cols-2 gap-10">
+                <a class="bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full text-center">Invite bot</a>
+                <a class="bg-white text-black font-bold py-2 px-4 rounded w-full text-center">Invite bot</a>
+            </div>
+        </div>
+        <img src="https://iaidl.org/wp-content/uploads/2020/11/artificial-intelligence-png-1.png" alt="AI" class="hero-img w-full h-auto">
+    </header><!--#2f3136-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#202225" fill-opacity="1" d="M0,160L18.5,176C36.9,192,74,224,111,202.7C147.7,181,185,107,222,85.3C258.5,64,295,96,332,138.7C369.2,181,406,235,443,234.7C480,235,517,181,554,165.3C590.8,149,628,171,665,197.3C701.5,224,738,256,775,277.3C812.3,299,849,309,886,277.3C923.1,245,960,171,997,128C1033.8,85,1071,75,1108,101.3C1144.6,128,1182,192,1218,197.3C1255.4,203,1292,149,1329,154.7C1366.2,160,1403,224,1422,256L1440,288L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
+    </svg>
+    
+
+    <main class="container mx-auto">
+        <section>
+            <h2 class="text-3xl font-bold m-4 text-center">Why AICord?</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
+                tincidunt lacinia. Sed euismod, nunc id aliquet ultricies, nunc mauris lacinia nunc, id tincidunt
+                nunc nunc eget justo.</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Invite Bot</button>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Section 2</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
+                tincidunt lacinia. Sed euismod, nunc id aliquet ultricies, nunc mauris lacinia nunc, id tincidunt
+                nunc nunc eget justo.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Section 3</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
+                tincidunt lacinia. Sed euismod, nunc id aliquet ultricies, nunc mauris lacinia nunc, id tincidunt
+                nunc nunc eget justo.</p>
+        </section>
+        <section>
+            <h2 class="text-3xl font-bold m-4 text-center">Commands</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>/create</td>
+                    <td>Create AI character</td>
+                </tr>
+                <tr>
+                    <td>/edit</td>
+                    <td>Edit AI character</td>
+                </tr>
+                <tr>
+                    <td>/delete</td>
+                    <td>Delete AI character</td>
+                </tr>
+                <tr>
+                    <td>/chat</td>
+                    <td>Chat with any AI character</td>
+                </tr>
+                <tr>
+                    <td>/imagine</td>
+                    <td>Generate an image with AI</td>
+                </tr>
+                <tr>
+                    <td>/alert</td>
+                    <td>View messages from the developers of AICord</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2 class="text-3xl font-bold m-4 text-center">Context menu</h2>
+            <table>
+                <tr>
+                    <th>Menu</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Summarize with AI</td>
+                    <td>Summarize long text using AI</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-4 mt-10">
+        <div class="container mx-auto px-4">
+            <p class="text-center">© 2024 AICord. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
