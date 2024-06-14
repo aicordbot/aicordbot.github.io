@@ -309,12 +309,64 @@ body {
         @apply resize-none;
       }
 
+      section {
+        @apply mb-20;
+      }
+
       /* Blue form submit button like Discord */
 
       input[type="submit"] {
         @apply bg-blue-600 text-white
         rounded-lg shadow-lg
         p-3 m-2 cursor-pointer;
+      }
+
+      /* Pricing plans */
+      .pricing-container {
+        @apply flex flex-row flex-wrap gap-3 justify-center
+        p-5 bg-gray-700 text-white font-medium;
+      }
+
+      .pricing-card {
+        @apply bg-gray-800 dark:bg-gray-900
+        border border-gray-700 dark:border-gray-800
+        rounded-lg shadow-lg h-fit
+        m-2 p-2 pb-4 sm:w-full md:w-60
+        transition duration-300 ease-in-out
+        cursor-pointer relative;
+      }
+
+      .pricing-thumbnail {
+        @apply w-full h-56 mb-auto
+        object-cover rounded-lg
+        m-auto;
+      }
+
+      .pricing-name {
+        @apply text-center text-white text-lg font-semibold
+        mt-2;
+      }
+
+      .pricing-price {
+        @apply text-center text-green-500 text-2xl font-bold
+        mt-2;
+      }
+
+      .pricing-features {
+        @apply text-left text-gray-400 text-sm
+        mt-2 mb-5 list-disc list-inside;
+      }
+
+      .pricing-card:hover {
+        @apply bg-gray-900 dark:bg-gray-800
+        border border-gray-800 dark:border-gray-700
+        shadow-xl;
+      }
+
+      .pricing-btn {
+        @apply bg-green-600 text-white
+        rounded-lg shadow-lg
+        p-2 bottom-0;
       }
 
 }
