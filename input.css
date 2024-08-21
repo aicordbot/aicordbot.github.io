@@ -16,7 +16,26 @@ body {
   color: #fff;
 }
 
+header {
+  background-image: url('./assets/img/ufo.gif');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
 @layer components {
+
+  header {
+    @apply grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-8 h-screen bg-primary;
+}
+
+.hero-text {
+    @apply p-10;
+}
+
+.hero-image {
+    @apply w-full h-auto p-10;
+}
   /* Discord style input */
   .discord-input {
     @apply bg-gray-900
@@ -56,7 +75,7 @@ body {
     bg-primary bg-opacity-90 
      h-16 
     m-0 ml-16 /*ml-96*/
-    sticky top-0 z-10
+    sticky top-0 z-20
     shadow-lg;
   }
 

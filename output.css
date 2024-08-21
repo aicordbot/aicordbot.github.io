@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container {
@@ -578,6 +588,33 @@ video {
   }
 }
 
+header {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 34 37 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  header {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hero-text {
+  padding: 2.5rem;
+}
+
+.hero-image {
+  height: auto;
+  width: 100%;
+  padding: 2.5rem;
+}
+
 /* Discord style input */
 
 /* Server card grid */
@@ -607,7 +644,7 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-:is(.dark select) {
+select:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -625,7 +662,7 @@ select {
   background-color: rgb(47 49 54 / var(--tw-bg-opacity));
 }
 
-:is(.dark .channel:hover) {
+.channel:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(54 57 63 / var(--tw-bg-opacity));
 }
@@ -646,7 +683,7 @@ select {
   color: rgb(133 77 14 / var(--tw-text-opacity));
 }
 
-:is(.dark .badge-premium) {
+.badge-premium:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -654,6 +691,19 @@ select {
 }
 
 /* Discord style buttons */
+
+.btn-primary {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 
 /* Pricing plans */
 
@@ -695,7 +745,7 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-:is(.dark .pricing-card) {
+.pricing-card:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -767,7 +817,7 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .pricing-card:hover) {
+.pricing-card:hover:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(54 57 63 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -815,7 +865,7 @@ table {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark table) {
+table:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -837,7 +887,7 @@ th {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark th) {
+th:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -858,7 +908,7 @@ tr {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark tr) {
+tr:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -976,7 +1026,7 @@ input[type="submit"] {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-:is(.dark .pricing-card) {
+.pricing-card:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(47 49 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -1048,7 +1098,7 @@ input[type="submit"] {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .pricing-card:hover) {
+.pricing-card:hover:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(54 57 63 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -1078,6 +1128,14 @@ input[type="submit"] {
 
 .top-0 {
   top: 0px;
+}
+
+.order-first {
+  order: -9999;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .col-span-3 {
@@ -1135,6 +1193,10 @@ input[type="submit"] {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
@@ -1366,6 +1428,11 @@ input[type="submit"] {
   font-size: 35px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1398,6 +1465,10 @@ input[type="submit"] {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1416,6 +1487,13 @@ body {
   color: #fff;
 }
 
+header {
+  background-image: url('./assets/img/ufo.gif');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -1432,8 +1510,26 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:order-first {
+    order: -9999;
+  }
+
+  .md\:order-last {
+    order: 9999;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
