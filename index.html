@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AICord is a versatile Discord bot designed to enrich your server with an array of AI capabilities, such as AI characters, image generation and more.">
+    <meta name="keywords" content="AI,AICord,Discord,Discord bot,Discord app,AI characters,image generator">
+    <meta name="author" content="AICord">
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <title>Discord Bot Landing Page</title>
+    <link rel="apple-touch-icon" href="./assets/img/logo.png">
+    <title>AICord - The best multi-purpose AI characters Discord bot</title>
     <!-- Include Tailwind CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='./output.css') }}">
     <script src="https://kit.fontawesome.com/d9ec437633.js" crossorigin="anonymous"></script>
@@ -15,7 +18,7 @@
 
 <body>
     <!-- Navbar with brand name and Discord login button -->
-    <nav class="bg-gray-900 sticky top-0">
+    <nav class="bg-gray-900 sticky top-0 opacity-100">
         <div class="container mx-auto p-4 flex justify-between items-center">
             <span class="text-2xl font-bold">AICord</span>
             <!--ul class="flex flex-row gap-2 justify-center items-center">
@@ -39,13 +42,13 @@
     <header>
         <div class="hero-text md:order-first order-last">
             <h1 class="md:text-6xl text-3xl font-extrabold mb-4 leading-normal">Bring AI features to your Discord server</h1>
-            <p class="font-extrabold md:text-3xl text-xl opacity-40">AICord is a versatile Discord bot designed to enrich your server with an array of AI capabilities, such as AI characters, image generation and more.</p>
+            <p class="font-extrabold md:text-3xl text-xl text-gray-500">AICord is a versatile Discord bot designed to enrich your server with an array of AI capabilities, such as AI characters, image generation and more.</p>
             <div class="grid grid-cols-2 gap-10 mt-3">
-                <a href="#" class="bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full text-center">Invite bot</a>
-                <a href="#" class="bg-white text-black font-bold py-2 px-4 rounded w-full text-center">Invite bot</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=936662970912608287&permissions=8&integration_type=0&scope=bot" class="bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full text-center">Invite bot</a>
+                <a href="https://dashboard.aicordapp.com" class="bg-white text-black font-bold py-2 px-4 rounded w-full text-center">Use dashboard</a>
             </div>
         </div>
-        <img class="hero-image md:order-last order-first" src="./assets/img/rocket.png" alt="Hero image" title="Hero image">
+        <img class="hero-image md:order-last order-first" src="./assets/img/logo.png" alt="Hero image" title="Hero image">
     </header>
     <div class="bg-primary p-9">
         <h5 class="text-2xl font-bold m-4 text-center">More than 300 servers use AICord</h4>
@@ -60,7 +63,7 @@
     </svg>
 
     <main class="container mx-auto">
-        <section>
+        <!--section>
             <h2 class="text-3xl font-bold m-4 text-center">Features</h2>
             <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-3">
 
@@ -127,34 +130,42 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section-->
         <section>
-            <h2 class="text-3xl font-bold m-4 text-center">Why AICord?</h2>
+            <!--h2 class="text-3xl font-bold m-4 text-center">Why AICord?</h2>
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
                 tincidunt lacinia. Sed euismod, nunc id aliquet ultricies, nunc mauris lacinia nunc, id tincidunt
                 nunc nunc eget justo.</p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Invite Bot</button>
-            <div class="lg:grid grid-cols-7 gap-16 mx-auto w-full max-w-[1240px] px-6 lg:px-10 my-28">
-                <img src="./assets/img/characters.png" alt="" class="col-span-4 w-full max-w-[560px] ml-auto mr-auto  lg:ml-0 lg:mr-auto">
-                <div class="col-span-3 flex flex-col justify-center items-start text-left">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Invite Bot</button-->
+            <div class="lg:grid grid-cols-7 gap-24 mx-auto w-full max-w-[1240px] my-36">
+                <img src="./assets/img/characters.png" alt="AI Characters" title="AI Characters" class="h-auto lg:w-full col-span-4 ml-auto mr-auto lg:ml-0 lg:mr-auto p-4 my-5 sm:my-0">
+                <div class="col-span-3 flex flex-col justify-center items-start text-left p-5">
                     <h2 class="font-bold text-[35px]">Build Your Own Unique Characters</h2>
                     <p>Have you ever wondered about chatting with a famous person, let's say, Elon Musk in your Discord server? By using AICord, the multifunctional AI Discord bot, this can be possible! Let’s make your Discord server funnier than ever using AI. Customize your AI characters to reflect your server's personality. You can unlock their potential with a powerful customization system, and even talk to them in a voice channel! Utilize AICord's AI Character list to add AI Characters made by the community or your friends to your Discord server or make your unique character that integrates into your server and aligns with your branding. Take control of AICord characters and tailor it to match your server's identity and enhance the user experience. It’s easy! With the help of our simple tutorial and helpful support team, you can set up an AI character in no time!</p>
                 </div>
             </div>
-            <div class="lg:grid grid-cols-7 gap-16 mx-auto w-full max-w-[1240px] px-6 lg:px-10 my-8">
-                <div class="col-span-3 flex flex-col justify-center items-start text-center lg:text-left">
+            <div class="lg:grid grid-cols-7 gap-24 mx-auto w-full max-w-[1240px] my-36">
+                <div class="col-span-3 flex flex-col justify-center items-start text-left p-5">
                     <h2 class="font-bold text-[35px]">Generate any image you imagine.</h2>
                     <p>With AICord's AI image generator, you can generate absolutely anything you imagine. You just need to specify a prompt, and AICord will draw that image for you. You can choose between art styles as well.</p>
                 </div>
-                <img src="./assets/img/imagine.png" alt="" class="col-span-4 w-full max-w-[560px] ml-auto mr-auto  lg:ml-0 lg:mr-auto">
+                <img src="./assets/img/imagine.png" alt="AI Image Generation" title="AI Image Generation" class="h-auto lg:w-full col-span-4 ml-auto mr-auto lg:ml-0 lg:mr-auto p-4 my-5 sm:my-0">
             </div>
+            <div class="lg:grid grid-cols-7 gap-24 mx-auto w-full max-w-[1240px] my-36">
+                <img src="./assets/img/cookie.png" alt="Cookie with chocolate chip AI recipe generation" title="Cookie with chocolate chip AI recipe generation" class="h-auto lg:w-full col-span-4 ml-auto mr-auto lg:ml-0 lg:mr-auto p-4 my-5 sm:my-0">
+                <div class="col-span-3 flex flex-col justify-center items-start text-left p-5">
+                    <h2 class="font-bold text-[35px]">Find a recipe by an image</h2>
+                    <p>Have you ever seen a picture of a delicious-looking cake, wanted to make it, but didn't know how? AICord's AI-based recipe generation function can write you the complete recipe for the cake shown in the picture you upload! And the best thing about it? This all works within Discord, so if your friend sends you a picture of a delicious cookie, you can immediately get the recipe for it from the AI ​​using the AICord Discord bot, without leaving the platform!</p>
+                </div>
+            </div>
+            
         </section>
 
-        <section>
-            <h2 class="text-2xl font-bold mb-4">Section 2</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
+        <section class="bg-primary p-9">
+            <h2 class="text-3xl font-bold m-4 text-center">AICord is used to bring AI features to over 799+ Discord servers</h2>
+            <!--p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam
                 tincidunt lacinia. Sed euismod, nunc id aliquet ultricies, nunc mauris lacinia nunc, id tincidunt
-                nunc nunc eget justo.</p>
+                nunc nunc eget justo.</p-->
         </section>
 
         <section>
