@@ -842,14 +842,6 @@ input[type="submit"] {
   order: 9999;
 }
 
-.-order-1 {
-  order: -1;
-}
-
-.-order-2 {
-  order: -2;
-}
-
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -1057,6 +1049,26 @@ input[type="submit"] {
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .p-10 {
